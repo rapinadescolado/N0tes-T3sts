@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+      *,
+      *::before,
+      *::after{
+        margin: 0;
+        padding: 0;
+      }
+      img{
+        pointer-events: none;
+      }
+      .anti-click{
+        width: 100%;
+        heigth: 100%;
+        background-color: red;
+      }
       body{
-          background-color: #303030;
-          margin: 0px;
-          padding: 0px;
+          background-color:rgb(90, 56, 45);
       }
-      #area{display: flex; justify-content: center; align-items: center; height: 100vh; width: 100vw;}
-      #btn{
-        width: 100px;
-        height: 100px;
-        background-color: #f00;
-        border: static 8px black;
-        border-radius: 10px;
-      }
+      
     </style>
 </head>
 
 <body>
-    <div id="area">
-      <button style:"opacity: 0%;" id="btn">
-        <h1>HI</h1>
-      </button>
-    </div>
+    
 </body>
 </html>
