@@ -1,3 +1,23 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+}
+img{
+  pointer-events: none;
+}
+.anti-click{
+  width: 100%;
+  heigth: 100%;
+  background-color: red;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
 header {
   display: flex;
   flex-direction: column;
