@@ -3,6 +3,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   height: 100vh;
   color: #fff;
   background-image: url(img/core\ dance.gif);
