@@ -5,6 +5,7 @@ header {
   align-items: center;
   height: 100vh;
   color: #ffffff
+  padding: 4vw;
 }
 
 h1, h4, h5{
