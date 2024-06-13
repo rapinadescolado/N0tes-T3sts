@@ -27,12 +27,13 @@ header {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  color: #fff;
   background-image: url(img/core\ dance.gif);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  padding: 0;
+}
+#titulo {
+  
 }
 
 h1, h4, h5{
