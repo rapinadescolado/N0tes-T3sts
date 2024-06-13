@@ -9,6 +9,7 @@ header {
   background-image: url(img/core\ dance.gif);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
+  background-position: center;
   padding: 4vw;
 }
 
