@@ -33,7 +33,8 @@ header {
   background-position: center;
 }
 #titulo {
-  
+  color: #fff;
+  margin: 4vw;
 }
 
 h1, h4, h5{
