@@ -34,7 +34,7 @@ header {
 }
 #titulo {
   color: #fff;
-  margin: 4vw;
+  margin: 5vw;
 }
 
 h1, h4, h5{
@@ -43,13 +43,13 @@ h1, h4, h5{
 }
 
 h1 {
-  font-size: 15vw;
-  margin-bottom: 10vh;
+  font-size: 14vw;
+  margin-bottom: 8vh;
 }
 h4 {
-  font-size: 5vw;
+  font-size: 4vw;
   margin-bottom: 4vh;
 }
 h5 {
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
