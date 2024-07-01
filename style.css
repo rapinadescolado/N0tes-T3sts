@@ -40,10 +40,11 @@ header {
   border-radius: 3vw;
 }
 #titulo:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 h1, h4, h5{
+  opacity: 1;
   font-family: 'Source Code Pro', monospace;
   text-align: center;
 }
