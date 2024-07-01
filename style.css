@@ -34,10 +34,11 @@ header {
 }
 #titulo {
   color: #fff;
-  background-image: #000;
+  background-color: #000;
   opacity: 0;
   margin: 10vw;
   border-radius: 3vw;
+  animation-duration: 1s;
 }
 #titulo:hover {
   opacity: 0.6;
