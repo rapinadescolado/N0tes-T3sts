@@ -34,7 +34,13 @@ header {
 }
 #titulo {
   color: #fff;
+  background-image: #000;
+  opacity: 0;
   margin: 10vw;
+  border-radius: 3vw;
+}
+#titulo:hover {
+  opacity: 0.4;
 }
 
 h1, h4, h5{
