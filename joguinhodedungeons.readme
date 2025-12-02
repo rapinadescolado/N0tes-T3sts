@@ -1,0 +1,64 @@
+// Para usar cole esse código no console de uma página em branco.
+// Caso não saiba fazer isso, siga os passos:
+// 1. abre o google e digita "about:blank" (sem as aspas) na barra de pesquisa.
+// 2. clica com o botao direito do mouse e vai em inspecionar
+// 3. vai na aba console
+// 4. apenas copia tudo isso escrito nesse readme e cola, dps da enter
+// 5. (caso de erro ao colar) passe pelo passo de verificação pra poder colar no console, as vezes basta escrever "allow pasting";
+
+const head = document.head;
+const body = document.body;
+const style = document.createElement("style");
+head.appendChild(style);
+
+const gamescreen = document.createElement("div");
+gamescreen.id = "gamescreen";
+body.appendChild(gamescreen);
+
+const mapscreen = document.createElement("div");
+const playerCard1 = document.createElement("div");
+const playerCard2 = document.createElement("div");
+
+gamescreen.appendChild(mapscreen);
+gamescreen.appendChild(playerCard1);
+gamescreen.appendChild(playerCard2);
+
+const map = document.createElement("div");
+mapscreen.appendChild(map);
+
+style.innerHTML = `
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #101010;
+    }
+
+    #gamescreen {
+        display: grid;
+        grid-template-columns: auto 98vh auto;
+        grid-template-rows: 98vh;
+        border: 1vh solid black;
+    }
+`;
+
+var playerCount = 0;
+
+function Player(name,keybinds) {
+
+    playerCount++;
+    
+    this.name = name;
+    this.level = 0;
+    this.xp = 0;
+    this.weapon = "none";
+    this.armor = "none";
+    // this.card = ;
+        
+}
