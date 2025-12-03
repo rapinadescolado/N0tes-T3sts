@@ -62,29 +62,20 @@ var playerCount = 0;
 function getCardInfo(cardElement) {
     let info = {};
     
-    info.title = document.createElement("h2");
-    info.icon = document.createElement("img");
-    info.health = document.createElement("div");
-    info.healthbar = document.createElement("div");
-    info.healthnumber = document.createElement("p");
-    info.weapon = document.createElement("img");
-    info.armor = document.createElement("img");
-    info.inventory = document.createElement("div");
+    cardElement.innerHTML = `
+        <h2 class="card-title">Nome hahaha</h2>
+        <img classs="card-icon">
+        <div class="card-healthbar">
+            <div class="card-healthbar-fill"></div>
+            <div class="card-healthbar-number></div>
+        </div>
+    `;
 
-    info.title.classList.add("card-title");
-    info.icon.classList.add("card-icon");
-    info.health.classList.add("card-health");
-    info.healthbar.classList.add("card-healthbar");
-    info.healthnumber.classList.add("card-healthnumber");
-
-    cardElement.appendChild(info.title);
-    cardElement.appendChild(info.icon);
-    cardElement.appendChild(info.health);
-    info.health.appendChild(info.healthbar);
-    info.health.appendChild(info.healthnumber);
-    cardElement.appendChild(info.weapon);
-    cardElement.appendChild(info.armor);
-    cardElement.appendChild(info.inventory);
+    info.title = cardElement.getElementsByClassName("card-title")[0];
+    info.icon = cardElement.getElementsByClassName("card-icon")[0];
+    info.healthbar = cardElement.getElementsByClassName("card-healthbar")[0];
+    info.healthfill = cardElement.getElementsByClassName("card-healthbar-fill")[0];
+    info.healthnumber = cardElement.getElementsByClassName("card-healthbar-number")[0];
     
     return info;
 }
