@@ -13,6 +13,8 @@ const playerCard2 = document.createElement("div");
 mapscreen.id = "mapscreen";
 playerCard1.id = "playercard-1";
 playerCard2.id = "playercard-2";
+playerCard1.classList.add("playercard");
+playerCard2.classList.add("playercard");
 
 gamescreen.appendChild(playerCard1);
 gamescreen.appendChild(mapscreen);
@@ -35,16 +37,31 @@ style.innerHTML = `
         overflow: hidden;
         background-color: #101010;
     }
-
     #gamescreen {
         display: grid;
         grid-template-columns: auto 98vh auto;
         grid-template-rows: 98vh;
         border: 1vh solid black;
     }
+
+    #mapscreen {
+        border: 3px white solid;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .playercard {
+        border-radius: 20px;
+        margin: 10px;
+        background-color: #363231;
+    }
 `;
 
 var playerCount = 0;
+
+function createCard() {
+    
+}
 
 function Player(name,keybinds) {
 
@@ -57,5 +74,6 @@ function Player(name,keybinds) {
     this.weapon = "none";
     this.armor = "none";
     this.card = document.getElementById(`playercard-${this.id}`);
+    
         
 }
