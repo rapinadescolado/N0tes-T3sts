@@ -10,14 +10,16 @@ body.appendChild(gamescreen);
 const mapscreen = document.createElement("div");
 const playerCard1 = document.createElement("div");
 const playerCard2 = document.createElement("div");
+mapscreen.id = "mapscreen";
 playerCard1.id = "playercard-1";
 playerCard2.id = "playercard-2";
 
-gamescreen.appendChild(mapscreen);
 gamescreen.appendChild(playerCard1);
+gamescreen.appendChild(mapscreen);
 gamescreen.appendChild(playerCard2);
 
 const map = document.createElement("div");
+map.id = "map";
 mapscreen.appendChild(map);
 
 style.innerHTML = `
@@ -54,6 +56,6 @@ function Player(name,keybinds) {
     this.xp = 0;
     this.weapon = "none";
     this.armor = "none";
-    this.card = document.getElementByID(`playercard-${this.id}`);
+    this.card = document.getElementById(`playercard-${this.id}`);
         
 }
