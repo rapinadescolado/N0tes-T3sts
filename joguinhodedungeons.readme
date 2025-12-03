@@ -59,8 +59,34 @@ style.innerHTML = `
 
 var playerCount = 0;
 
-function createCard() {
+function getCardInfo(cardElement) {
+    let info = {};
     
+    info.title = document.createElement("h2");
+    info.icon = document.createElement("img");
+    info.health = document.createElement("div");
+    info.healthbar = document.createElement("div");
+    info.healthnumber = document.createElement("p");
+    info.weapon = document.createElement("img");
+    info.armor = document.createElement("img");
+    info.inventory = document.createElement("div");
+
+    info.title.classList.add("card-title");
+    info.icon.classList.add("card-icon");
+    info.health.classList.add("card-health");
+    info.healthbar.classList.add("card-healthbar");
+    info.healthnumber.classList.add("card-healthnumber");
+
+    cardElement.appendChild(info.title);
+    cardElement.appendChild(info.icon);
+    cardElement.appendChild(info.health);
+    info.health.appendChild(info.healthbar);
+    info.health.appendChild(info.healthnumber);
+    cardElement.appendChild(info.weapon);
+    cardElement.appendChild(info.armor);
+    cardElement.appendChild(info.inventory);
+    
+    return info;
 }
 
 function Player(name,keybinds) {
@@ -74,6 +100,6 @@ function Player(name,keybinds) {
     this.weapon = "none";
     this.armor = "none";
     this.card = document.getElementById(`playercard-${this.id}`);
-    
+    this.info = getCardInfo(this.card);
         
 }
